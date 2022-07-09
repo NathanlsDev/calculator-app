@@ -1,0 +1,74 @@
+//font
+$league-spartan: 'League Spartan', sans-serif;
+
+
+
+//### Theme 1
+//Backgrounds
+$main-background: hsl(222, 26%, 31%);//grayish dark-blue
+$toggle-background-keypad-background: hsl(223, 31%, 20%);
+$input-background: hsl(224, 36%, 15%);
+
+//Keys
+$key-background: hsl(225, 21%, 49%);
+$key-shadow-reset: hsl(224, 28%, 35%);
+
+$key-background-toggle: hsl(6, 63%, 50%);
+$key-shadow: hsl(6, 70%, 34%);
+
+$key-background: hsl(30, 25%, 89%);
+$key-shadow-btn: hsl(28, 16%, 65%);
+
+//Text
+$Very-dark-grayish: hsl(221, 14%, 31%);
+
+
+
+
+//### Theme 2
+//Backgrounds
+
+$main-background2: hsl(0, 0%, 90%);
+$toggle-background-keypad-background2: hsl(0, 5%, 81%);
+$input-background2: hsl(0, 0%, 93%);
+
+//#### Keys
+
+$key-background2: hsl(185, 42%, 37%);
+$key-shadow2: hsl(185, 58%, 25%);
+
+$key-background-toggle2: hsl(25, 98%, 40%);
+$key-shadow-reset2: hsl(25, 99%, 27%);
+
+$key-background2: hsl(45, 7%, 89%);
+$key-shadow-btn2: hsl(35, 11%, 61%);
+
+//#### Text
+
+$Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+$White-text: hsl(0, 0, 100%);
+
+
+
+//### Theme 3
+
+//Backgrounds
+
+$violet-main-background: hsl(268, 75%, 9%);
+$violet-keypad-screen-background: hsl(268, 71%, 12%);
+
+//#### Keys
+
+$violet-key-background: hsl(281, 89%, 26%);
+$magenta-key-shadow: hsl(285, 91%, 52%);
+
+$Pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+$Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+
+$Very-dark-violet-key-background: hsl(268, 47%, 21%);
+$Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+//#### Text
+
+$Light-yellow: hsl(52, 100%, 62%);
+$Very-dark-blue: hsl(198, 20%, 13%);

@@ -14,13 +14,54 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <h1>Calc</h1>
-        <section>
-          Theme
+    <main class="calculator"> 
+      <header class="calculator__header">
+        <h1>Calc</h1>        
+        <section class="calculator__themes">
+          <h2>Theme</h2>          
+          <div class="themes__options">
+            <label for="">1</label>
+            <label for="">2</label>
+            <label for="">3</label>
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+          </div>
         </section>
       </header>
+
+        <section class="output">
+          <div class="output__text">resultado</div>
+        </section>
+
+        <section class="container__buttons">          
+          <div class="first-line">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>Del</button>
+          </div>
+          <div class="second-line">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+          </div>
+          <div class="third-line">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+          </div>
+          <div class="fourth-line">
+            <button>.</button>
+            <button>0</button>
+            <button>/</button>
+            <button>x</button>
+          </div>
+          <button>reset</button>
+          <button>=</button>          
+        </section>      
     </main>    
   </body>
 </html>

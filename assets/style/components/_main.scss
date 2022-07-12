@@ -1,5 +1,52 @@
-main{
-    display: grid;    
+@import '../abstract/variables';
+
+.calculator{
+    background-color: pink;
+    display: grid;
+    height: 100vh;
+    padding: 2rem;
+    gap: 1.5rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 3fr;
+    .calculator__header{
+        background-color: green;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        .calculator__themes{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            .themes__options{
+                display: flex;
+            }
+        }
+    }
+
+    .output{
+        display: grid;
+        background-color: red;
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container__buttons{
+        background-color: $toggle-background-keypad-background;
+        display: grid;
+        height: 200px;
+        height: 95%;
+        gap: 10px;
+        padding: 1rem;
+        border-radius: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        .btn{
+            border-radius: 10px;
+            height: 70px;
+            width: 60px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
 }

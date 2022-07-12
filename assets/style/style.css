@@ -16,16 +16,15 @@ body {
 }
 
 .calculator {
-  background-color: pink;
   display: grid;
   height: 100vh;
   padding: 2rem;
   gap: 1.5rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr 2fr;
 }
 .calculator .calculator__header {
-  background-color: green;
+  color: hsl(0deg, 0%, 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -40,7 +39,9 @@ body {
 }
 .calculator .output {
   display: grid;
-  background-color: red;
+  background-color: hsl(224deg, 36%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
   height: 100px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -49,17 +50,43 @@ body {
   background-color: hsl(223deg, 31%, 20%);
   display: grid;
   height: 200px;
-  height: 95%;
-  gap: 10px;
+  height: 100%;
+  grid-gap: 10px;
   padding: 1rem;
   border-radius: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
 .calculator .container__buttons .btn {
-  border-radius: 10px;
-  height: 70px;
-  width: 60px;
+  border-radius: 5px;
+  height: 60px;
   font-size: 32px;
   font-weight: 700;
+  border-bottom: 4px solid hsl(28deg, 16%, 65%);
+  background-color: hsl(30deg, 25%, 89%);
+  color: hsl(222deg, 26%, 31%);
+}
+.calculator .container__buttons .del {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225deg, 21%, 49%);
+  border-bottom: 4px solid hsl(224deg, 28%, 35%);
+}
+.calculator .container__buttons .reset {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: hsl(0deg, 0%, 100%);
+  grid-column: 1/3;
+  margin-bottom: 5px;
+  background-color: hsl(225deg, 21%, 49%);
+  border-bottom: 4px solid hsl(224deg, 28%, 35%);
+}
+.calculator .container__buttons .equals {
+  grid-column: 3/5;
+  margin-bottom: 5px;
+  background-color: hsl(6deg, 63%, 50%);
+  border-bottom: 4px solid hsl(6deg, 70%, 34%);
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */

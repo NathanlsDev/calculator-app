@@ -39,7 +39,7 @@ body {
 }
 .calculator .output {
   display: grid;
-  background-color: hsl(224deg, 36%, 15%);
+  background-color: hsl(198deg, 20%, 13%);
   color: hsl(0deg, 0%, 100%);
   border-radius: 15px;
   height: 100px;

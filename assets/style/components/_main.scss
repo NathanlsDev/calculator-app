@@ -8,7 +8,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr;
     .calculator__header{
-        color: $White-text;
+        color: $white;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr ;
@@ -24,8 +24,8 @@
 
     .output{
         display: grid;
-        background-color: $input-background;
-        color: $White-text;
+        background-color: $dark-blue;
+        color: $white;
         border-radius: 15px;
         height: 100px;
         grid-template-columns: 1fr;
@@ -33,7 +33,7 @@
     }
 
     .container__buttons{
-        background-color: $toggle-background-keypad-background;
+        background-color: $semi-dark-blue;
         display: grid;
         height: 200px;
         height: 100%;
@@ -47,34 +47,34 @@
             height: 60px;
             font-size: 32px;
             font-weight: 700;
-            border-bottom: 4px solid $key-shadow-btn;
-            background-color: $key-backgroundw;
-            color: $main-background;
+            border-bottom: 4px solid $gray;
+            background-color: $pale-white;
+            color: $grayish-dark-blue;
         }
         .del{
             text-transform: uppercase;
             font-size: 1.1rem;
-            color: $White-text;
-            color: $White-text;
-            background-color: $key-background;
-            border-bottom: 4px solid $key-shadow-reset;
+            color: $white;
+            color: $white;
+            background-color: $light-grayish-blue;
+            border-bottom: 4px solid $heavy-grayish-blue;
         }
         .reset{
             text-transform: uppercase;
             font-size: 1.1rem;
-            color: $White-text;
+            color: $white;
             grid-column: 1/3;
             margin-bottom: 5px;
-            background-color: $key-background;
-            border-bottom: 4px solid $key-shadow-reset;
+            background-color: $light-grayish-blue;
+            border-bottom: 4px solid $heavy-grayish-blue;
             
         }
         .equals{
             grid-column: 3/5;
             margin-bottom: 5px;
-            background-color: $key-background-toggle;
-            border-bottom: 4px solid $key-shadow;
-            color: $White-text;
+            background-color: $intense-red;
+            border-bottom: 4px solid $dark-red;
+            color: $white;
         }
     }
 }

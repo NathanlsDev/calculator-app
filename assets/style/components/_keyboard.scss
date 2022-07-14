@@ -1,0 +1,33 @@
+.calc__buttons {
+  border-radius: .7rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  height: 100%;
+  padding: 1.2rem;
+  width: 100%;
+  .calc__btn {
+    appearance: none;
+    border: none;
+    border-radius: .3rem;
+    font-size: inherit;
+    padding: .2em;
+    cursor: pointer;
+  }
+  .calc__btn:active {
+    box-shadow: none;
+    transform: scale(.95);
+  }
+  .smtxt {
+    font-size: .6em;
+  }
+
+  .reset {
+    grid-column: 1/3;
+    text-transform: uppercase;
+  }
+
+  .equals {    
+    grid-column: 3/5;
+  }
+}

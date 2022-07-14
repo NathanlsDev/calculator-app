@@ -1,0 +1,29 @@
+.calc__container {
+  padding-top: 3.8em;
+  position: relative;
+  .calc__screen {
+    border-radius: .7rem;
+    height: 5rem;
+    left: 0;
+    margin: .5em 0;
+    padding: .7em .8rem;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    .operator__indicator {
+      font-size: .6em;
+      position: absolute;
+      right: .5em;
+      top: .3em;
+    }
+    .calc__display {
+      min-height: 1.18em;
+      padding-right: .2em;
+      position: relative;
+    }
+    .hide {
+      visibility: hidden;
+    }
+  }
+}

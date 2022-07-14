@@ -5,7 +5,7 @@
   </a>
 </div>
 
-Calculador para que realiza as 4 operações básicas. Project from <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29" target="_blank">frontendmentor.io</a>
+Calculador para realizar as 4 operações básicas. Project from <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29" target="_blank">frontendmentor.io</a>
 
 # Sobre o projeto
 - Projeto realizado visando praticar e evoluir meu conhecimento em JavaScript, e Grid Lyout.

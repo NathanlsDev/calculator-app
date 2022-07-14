@@ -1,63 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 
     <title>Calculator app</title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/components/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   </head>
 
-  <body>
-    <main class="calculator"> 
-      <header class="calculator__header">
-        <h1>Calc</h1>
-        <section class="calculator__themes">
-          <h2>Theme</h2>
-          <div class="themes__options">
-            <label for="">1</label>
-            <input type="checkbox" name="" id="">
-            <label for="">2</label>
-            <input type="checkbox" name="" id="">
-            <label for="">3</label>
-            <input type="checkbox" name="" id="">
+  <body class="main__bg">
+    <main class="container">
+      <header class="calculator__header txt">
+        <h1>calc</h1>
+        <div class="calculator__theme">
+          <p>Theme</p>
+          <div class="theme__indicators">
+            <span id="indicator1" class="indicator pad__bg" data-value="1"></span>
+            <span id="indicator2" class="indicator pad__bg" data-value="2"></span>
+            <span id="indicator3" class="indicator pad__bg" data-value="3"></span>
+            <span class="selected ekey pointer"></span>
           </div>
-        </section>
+        </div>
       </header>
 
-        <section class="output">
-          <div class="output__text">resultado</div>
+      <section class="calc__container">
+        <div class="calc__screen screen__bg">
+          <span class="operator__indicator txt"></span>
+          <div class="calc__display txt"></div>
+        </div>
+      </section>
+
+        <section class="calc__buttons pad__bg">
+          <button class="calc__btn calc__num key keytxt keyshadow">7</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">8</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">9</button>
+          <button class="calc__btn specialKey txt skeyshadow smtxt" id="del_btn">DEL</button>
+
+          <button class="calc__btn calc__num key keytxt keyshadow">4</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">5</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">6</button>
+          <button class="calc__btn key calc_operator keytxt keyshadow">+</button>
+          
+          <button class="calc__btn calc__num key keytxt keyshadow">1</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">2</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">3</button>
+          <button class="calc__btn key calc_operator keytxt keyshadow">-</button>
+
+          <button class="calc__btn calc__num key keytxt keyshadow" data-action="decimal">.</button>
+          <button class="calc__btn calc__num key keytxt keyshadow">0</button>
+          <button class="calc__btn key calc_operator keytxt keyshadow">/</button>
+          <button class="calc__btn key calc_operator keytxt keyshadow">x</button>
+
+          <button class="calc__btn reset specialKey txt skeyshadow smtxt full" id="reset_btn">reset</button>
+          <button class="calc__btn equals ekey txt ekeyshadow full" id="equal_btn">=</button>
         </section>
+      </main>
 
-        <section class="container__buttons">
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn del">Del</button>
-
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn">&plus;</button>
-
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn">&minus;</button>
-
-          <button class="btn">.</button>
-          <button class="btn">0</button>
-          <button class="btn">&divide;</button>
-          <button class="btn">&times;</button>
-
-          <button class="btn reset">reset</button>
-          <button class="btn equals">&equals;</button>          
-        </section>      
-    </main>    
-  </body>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/themes.js"></script>
+  </body>  
 </html>

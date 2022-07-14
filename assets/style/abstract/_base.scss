@@ -1,19 +1,21 @@
 @import 'variables';
 
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-    list-style: none;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: all .2s ease;
 }
 
-
 body{
-    background-color: $grayish-dark-blue;
-    font-family: $league-spartan;
-    max-width: 1440px;
-    min-width: 360px;
-    height: 100vh;
-    margin: 0 auto;
+  display: grid;
+  font-family: $league-spartan;
+  font-size: 2rem;
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-width: 360px;
+  place-items: center;
 }
